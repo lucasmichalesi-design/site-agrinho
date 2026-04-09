@@ -1,78 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte, Futuro Sustentável</title>
+    <title>AgroForte - Futuro Sustentável</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="header">
-        <div class="container nav-container">
-            <h1 class="logo">Eco<span>Agro</span></h1>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#sobre">O Equilíbrio</a></li>
-                    <li><a href="#pilares">Pilares</a></li>
-                </ul>
-            </nav>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
+    <header>
+        <nav>
+            <div class="logo">Agro<span>Forte</span></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sustentabilidade</a></li>
+                <li><a href="#busca">Informações</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h2>Agro Forte, Futuro Sustentável</h2>
-            <p>Onde a inovação encontra a natureza. Promovemos o equilíbrio perfeito entre a alta produtividade no campo e a preservação do meio ambiente.</p>
-            <a href="#sobre" class="btn">Descubra Como</a>
+            <h1>Equilíbrio entre Produção e Meio Ambiente</h1>
+            <p>Conheça o potencial da agricultura familiar para um futuro mais verde.</p>
+            <a href="#busca" class="btn">Explorar Conteúdo</a>
         </div>
     </section>
 
-    <section id="sobre" class="section">
-        <div class="container">
-            <h2 class="section-title">A Importância do Equilíbrio</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>O agronegócio é o motor da nossa economia e fundamental para alimentar o mundo em crescimento. No entanto, produzir mais não precisa significar destruir mais.</p>
-                    <p>O futuro sustentável exige práticas que renovem o solo, preservem as nascentes e reduzam as emissões de carbono. A tecnologia e o conhecimento científico são nossos maiores aliados para garantir que a terra de hoje continue fértil e próspera para as próximas gerações.</p>
-                </div>
-            </div>
+    <section id="busca" class="search-section">
+        <h2>Busque Conhecimento</h2>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Ex: Cooperativismo, Orgânicos, Crédito Rural...">
+            <button onclick="searchInfo()">Buscar</button>
         </div>
-    </section>
-
-    <section id="pilares" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Pilares da Produção Sustentável</h2>
-            <div class="cards-grid">
-                <div class="card">
-                    <div class="card-icon">🌱</div>
-                    <h3>Agricultura de Precisão</h3>
-                    <p>Uso de dados, satélites e drones para aplicar água e insumos apenas onde é estritamente necessário, reduzindo custos e desperdícios.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">♻️</div>
-                    <h3>Rotação de Culturas</h3>
-                    <p>Alternância planejada de espécies vegetais na mesma área, enriquecendo a saúde do solo e quebrando o ciclo natural de pragas.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">💧</div>
-                    <h3>Gestão Hídrica</h3>
-                    <p>Sistemas de irrigação inteligentes e captação eficiente para garantir que cada gota seja valorizada no desenvolvimento da lavoura.</p>
-                </div>
+        <div id="results" class="results-grid">
             </div>
-        </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; <span id="year"></span> EcoAgro. Todos os direitos reservados. Promovendo um campo sustentável.</p>
-        </div>
+        <p>&copy; 2026 AgroForte Sustentável - Referências: EMBRAPA & Ministério do Desenvolvimento Agrário.</p>
     </footer>
 
     <script src="script.js"></script>

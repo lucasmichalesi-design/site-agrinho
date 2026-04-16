@@ -1,20 +1,24 @@
-// Seleção de elementos
-const botao = document.getElementById('btn-interativo');
+// Função para destacar conceitos importantes
+function destacarConceitos() {
+    const dataAtual = new Date().toLocaleDateString('pt-BR');
+    console.log(`Sistema de Educação Digital iniciado em: ${dataAtual}`);
+}
 
-// Exemplo de interação acessível
-botao.addEventListener('click', () => {
-    const estaPressionado = botao.getAttribute('aria-pressed') === 'true';
+// Logica para explicar termos via clique (Exemplo de IA)
+document.addEventListener('DOMContentLoaded', () => {
+    destacarConceitos();
+
+    const sections = document.querySelectorAll('section');
     
-    // Inverte o estado
-    botao.setAttribute('aria-pressed', !estaPressionado);
-    
-    if (!estaPressionado) {
-        botao.textContent = "Ativado";
-        botao.style.backgroundColor = "#28a745";
-    } else {
-        botao.textContent = "Clique aqui";
-        botao.style.backgroundColor = "#007bff";
-    }
-    
-    console.log("Botão clicado!");
+    sections.forEach(section => {
+        section.addEventListener('mouseenter', () => {
+            section.style.backgroundColor = '#e8f0fe';
+        });
+        
+        section.addEventListener('mouseleave', () => {
+            section.style.backgroundColor = '#f8f9fa';
+        });
+    });
+
+    console.log("Módulos de Pensamento Computacional e IA prontos para exploração.");
 });
